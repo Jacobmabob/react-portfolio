@@ -14,11 +14,11 @@ export const StyledNavUl = styled.ul`
 
   a, a:link, a:visited, a:hover, a:active, a:focus {
     text-decoration: none;
-    color: #38362f;
+    color: #403b3b;
   }
 
   a:active, a:focus {
-    border-bottom: 2px solid #6d3d14;
+    border-bottom: 2px solid #403b3b;
   }
 
   li {

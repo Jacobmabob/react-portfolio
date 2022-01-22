@@ -39,6 +39,6 @@ export const StyledContent = styled.div`
   }
 
   @media ${device.laptopL} {
-    padding: 0 20rem;
+    padding: 0 15rem;
   }
 `
