@@ -7,7 +7,6 @@ export const StyledCard = styled.div`
 
   padding: 6rem .5rem;
   position: relative;
-  border-bottom: 2px solid green;
   border-bottom-width: 50%;
   border-color: #657153;
 

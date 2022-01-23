@@ -12,4 +12,8 @@ export const StyledFooter = styled.footer`
     height: 40px;
     margin: 0 .25rem;
   }
+
+  image:hover {
+    
+  }
 `

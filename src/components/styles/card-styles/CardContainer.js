@@ -3,7 +3,7 @@ import { device } from "../devices"
 
 export const CardContainer = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
 
   @media ${device.mobileS} {
