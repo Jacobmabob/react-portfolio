@@ -4,12 +4,15 @@ export const StyledCard = styled.div`
 
   flex-grow: 1;
   max-width: 350px;
-
-  padding: 6rem .5rem;
+  margin: 6rem auto;
+  // padding: 6rem 0;
   position: relative;
-  border-bottom-width: 50%;
-  border-color: #657153;
-
+  border: solid 1px #F8F8F8;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  
+  p {
+    margin: 1rem .3rem;
+  }
 
   img {
     width: 100%;

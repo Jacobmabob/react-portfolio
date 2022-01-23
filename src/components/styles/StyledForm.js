@@ -30,7 +30,7 @@ export const StyledForm = styled.form`
   input:focus {
     border-color: grey;
     outline: none;
-    background-color:  #e8e8e8;
+    background-color:  #F8F8F8;
   }
 
   textarea {
@@ -43,7 +43,7 @@ export const StyledForm = styled.form`
   textarea:focus {
     border-color: grey;
     outline: none;
-    background-color: #e8e8e8;
+    background-color: #F8F8F8;
   }
 
 

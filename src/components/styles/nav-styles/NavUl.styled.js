@@ -18,7 +18,7 @@ export const StyledNavUl = styled.ul`
   }
 
   a:active, a:focus {
-    border-bottom: 2px solid #403b3b;
+    border-bottom: 1px solid #929292;
   }
 
   li {

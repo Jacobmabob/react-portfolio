@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { StyledForm } from './styles/StyledForm';
 import { StyledInput } from './styles/form-styles/StyledInputField';
+import { useFormik } from 'formik';
+import * as Yup from "yup";
 import Button from "./Button";
 
 
@@ -10,57 +12,87 @@ export default function Form() {
   const [subject, setSubject] = useState('');
   const [body, setBody] = useState('');
 
-  const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { name, value } = e.target;
-    // console.log(`${name} = ${value}`)
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      subject: "",
+      body: "",
+    },
+    validationSchema: Yup.object({
+      email: Yup.string()
+      .email("Invalid email address")
+      .required("Required"),
+      subject: Yup.string()
+        .max(20, "Must be 20 characters or less")
+        .required("Required"),
+      body: Yup.string()
+      .required("Required"),
+    }),
+    onSubmit: (values) => {
+      console.log(values)
+    }
+  });
 
-    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    // return name === 'email' ? setEmail(value) : setSubject(value);
-  };
-
-  const handleFormSubmit = (e) => {
-
-    e.preventDefault();
-
-
-  };
 
   return (
-    <StyledForm>
+    <StyledForm onSubmit={formik.handleSubmit}>
       <StyledInput>
         <label>
           Email *
         </label>
         <input
-          // value={email}
+          id="email"
           name="email"
-          onChange={handleInputChange}
+          onChange={formik.handleChange}
           type="email"
+          onBlur={formik.handleBlur}
+          value={formik.values.email}
         />
+        {formik.touched.email 
+          && formik.errors.email 
+            ? <p className="form-error">{formik.errors.email}</p> 
+            : null }
+
       </StyledInput>
       <StyledInput>
         <label>
           Subject *
         </label>
+        
         <input
+          id="subject"
           name="subject"
-          onChange={handleInputChange}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
           type="text"
+          value={formik.values.subject}
         />
+
+          {formik.touched.subject
+            && formik.errors.subject 
+              ? <p className="form-error">{formik.errors.subject}</p> 
+              : null }
+
       </StyledInput>
       <StyledInput>
         <label>
           Body *
         </label>
         <textarea
+          id="body"
           rows="12"
           name="body"
           type="text"
-          onChange={handleInputChange}
+          value={formik.values.body}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
         />
+        {formik.touched.body
+          && formik.errors.body 
+            ? <p className="form-error">{formik.errors.body}</p> 
+            : null }
       </StyledInput>
-      <Button text="Submit"/>
+      <Button text="Submit" type="submit"/>
     </StyledForm>
   );
 }
