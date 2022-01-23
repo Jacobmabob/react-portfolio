@@ -17,8 +17,8 @@ export const StyledNavUl = styled.ul`
     color: #403b3b;
   }
 
-  a:active, a:focus {
-    border-bottom: 1px solid #929292;
+  a:active, a:focus, a:hover {
+    border-bottom: 2px solid #929292;
   }
 
   li {

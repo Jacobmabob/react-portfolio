@@ -4,6 +4,7 @@ export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-width: 100%;
 
   > * {
     margin: .5rem 0;
@@ -44,6 +45,11 @@ export const StyledForm = styled.form`
     border-color: grey;
     outline: none;
     background-color: #F8F8F8;
+  }
+
+  .submitButton {
+    align-self: center;
+    margin: 0 auto;
   }
 
 

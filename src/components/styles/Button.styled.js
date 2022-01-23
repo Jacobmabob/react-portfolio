@@ -16,14 +16,14 @@ export const StyledButton = styled.button`
 
   :hover {
 
-    border: none;
-    width: 115px;
-    padding: .5rem 0;
+    border-color: transparent;
 
     ::before{
       margin: 0;
       right: 0;
       top:0;
+    
+
     }
   }
 
@@ -32,11 +32,10 @@ export const StyledButton = styled.button`
     content: "";
     margin-top: -1px; 
     position: absolute;
-    margin-left: -10px;
+    margin-left: -15px;
     width: 100%;
     height: 100%;
     z-index: -1;
-    transition: 150ms margin;
   }
 
 // /* CSS */

@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledLogo } from "../styles/nav-styles/Logo.styled";
-// import logo from "../../logo.svg"
+import logo from "../../assets/images/project-icons/logo.svg"
 
 export default function Logo() {
   return (

@@ -6,6 +6,8 @@ export const StyledContent = styled.div`
   h1 {
     font-size: 2.5rem;
     margin: 0;
+    font-weight: 500;
+    letter-spacing: .1rem;
   }
 
   h1::before {
@@ -21,13 +23,17 @@ export const StyledContent = styled.div`
   }
 
   h3 {
-    margin: .25rem 0;
+    margin: .25rem ;
     font-weight: 600;
   }
 
 
   @media ${device.mobileS} {
-    padding: 0 2rem;
+    padding: 0 1rem;
+  }
+
+  @media ${device.mobileL} {
+    padding: 0 4rem;
   }
 
   @media ${device.tablet} {

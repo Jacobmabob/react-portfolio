@@ -6,13 +6,21 @@ export const CardContainer = styled.div`
   justify-content: space-between;
 
 
+
+
   @media ${device.mobileS} {
     display: block;
+    div:first-child {
+      margin-top: 1rem;
+    }
   }
 
   @media ${device.tablet} {
     display: flex;
     flex-wrap: wrap;
+    div:first-child {
+      margin-top: 6rem;
+    }
   }
 
   @media ${device.laptop} {

@@ -1,37 +1,61 @@
 import React, { useState } from 'react';
+
 import { StyledForm } from './styles/StyledForm';
 import { StyledInput } from './styles/form-styles/StyledInputField';
+
 import { useFormik } from 'formik';
 import * as Yup from "yup";
+import emailjs, { send } from '@emailjs/browser'
+
+
 import Button from "./Button";
 
 
+
 export default function Form() {
-  // Here we set two state variables for firstName and lastName using `useState`
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [body, setBody] = useState('');
+
+  const [buttonState, setButtonState ] = useState('Send Message')
 
   const formik = useFormik({
     initialValues: {
-      email: "",
+      reply_to: "",
       subject: "",
-      body: "",
+      message: "",
+      to_name: "jacobmccarthy.dev@gmail.com"
     },
     validationSchema: Yup.object({
-      email: Yup.string()
+      reply_to: Yup.string()
       .email("Invalid email address")
       .required("Required"),
       subject: Yup.string()
         .max(20, "Must be 20 characters or less")
         .required("Required"),
-      body: Yup.string()
+      message: Yup.string()
       .required("Required"),
     }),
+
+
     onSubmit: (values) => {
-      console.log(values)
+      const serviceID = "service_g8hwxzw";
+      const templateID = "template_uckny3d";
+      const userID = "user_htcdsYliLnUOOF1TkXHRG"; 
+
+      try {
+        emailjs.send( serviceID, templateID, values, userID)
+          .then(() => {
+            console.log('email sent!')
+            alert("Thanks for reaching out! I'll get back to you shortly.")
+            // resetForm();
+          })
+      }
+      catch {
+        console.log('there was a problem')
+	      // setSubmitting(false);
+      }
     }
   });
+
+  
 
 
   return (
@@ -41,16 +65,16 @@ export default function Form() {
           Email *
         </label>
         <input
-          id="email"
-          name="email"
+          id="reply_to"
+          name="reply_to"
           onChange={formik.handleChange}
-          type="email"
+          type="reply_to"
           onBlur={formik.handleBlur}
-          value={formik.values.email}
+          value={formik.values.reply_to}
         />
-        {formik.touched.email 
-          && formik.errors.email 
-            ? <p className="form-error">{formik.errors.email}</p> 
+        {formik.touched.reply_to 
+          && formik.errors.reply_to 
+            ? <p className="form-error">{formik.errors.reply_to}</p> 
             : null }
 
       </StyledInput>
@@ -76,23 +100,23 @@ export default function Form() {
       </StyledInput>
       <StyledInput>
         <label>
-          Body *
+          Message *
         </label>
         <textarea
-          id="body"
+          id="message"
           rows="12"
-          name="body"
+          name="message"
           type="text"
-          value={formik.values.body}
+          value={formik.values.message}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
         />
-        {formik.touched.body
-          && formik.errors.body 
-            ? <p className="form-error">{formik.errors.body}</p> 
+        {formik.touched.message
+          && formik.errors.message 
+            ? <p className="form-error">{formik.errors.message}</p> 
             : null }
       </StyledInput>
-      <Button text="Submit" type="submit"/>
+      <Button className="submitButton" text="Submit" type="submit"/>
     </StyledForm>
   );
 }

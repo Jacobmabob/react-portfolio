@@ -2,16 +2,26 @@ import styled from "styled-components";
 
 export const StyledCard = styled.div`
 
-  flex-grow: 1;
-  max-width: 350px;
-  margin: 6rem auto;
+  flex: 1 1 30%;
+  max-width: 450px;
+  max-height: 600px;
+  margin: 6rem 1rem;;
   // padding: 6rem 0;
   position: relative;
   border: solid 1px #F8F8F8;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   
   p {
-    margin: 1rem .3rem;
+    margin: 1rem .5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin: .8rem .5rem;
+  }
+
+  .tags {
+    font-size: .8rem;
   }
 
   img {
