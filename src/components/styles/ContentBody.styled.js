@@ -14,7 +14,7 @@ export const StyledContent = styled.div`
     background-color: #ffee93;
     content: "";
     margin: 0 auto;
-    margin-top: 25px; 
+    margin-top: 30px; 
     position: absolute;
     margin-left: -7px;
     width: 130px;
