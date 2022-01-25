@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../devices";
+import { device } from "../utils/devices";
 
 export const StyledContainer = styled.div`
     display: flex;
@@ -10,6 +10,7 @@ export const StyledContainer = styled.div`
 
     img {
         display: none;
+        max-width: 400px;
     }
 
     h1 {
@@ -31,11 +32,12 @@ export const StyledContainer = styled.div`
     }
 
 
-        @media ${device.tablet} {
+    @media ${device.tablet} {
+        display: flex;
+        flex-direction: row;
+        
+        img {
             display: flex;
-            flex-direction: row;
-            img {
-                display: flex;
             }
           }
 `

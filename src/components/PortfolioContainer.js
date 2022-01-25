@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Container } from './styles/Container.styled';
 import { StyledContent } from './styles/ContentBody.styled';
-import Nav from './navbar/Nav';
-import Footer from './Footer';
-import About from './pages/About';
-import Work from './pages/Work';
-import Skills from './pages/Skills';
-import Contact from './pages/Contact';
+import Nav from './Header/Header';
+import Footer from './Footer/Footer';
+import About from './Pages/About/About';
+import Work from './Pages/Projects/Work';
+import Skills from './Pages/Resume/Skills';
+import Contact from './Pages/Contact/Contact';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');

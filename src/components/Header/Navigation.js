@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledNavUl } from '../styles/nav-styles/NavUl.styled';
+import { StyledNavUl } from '../styles/nav_styles/NavUl.styled';
 
 
 

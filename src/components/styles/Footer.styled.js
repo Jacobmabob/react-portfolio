@@ -13,7 +13,7 @@ export const StyledFooter = styled.footer`
     margin: 0 .25rem;
   }
 
-  image:hover {
-    
+  img:hover {
+    opacity: 50%;
   }
 `

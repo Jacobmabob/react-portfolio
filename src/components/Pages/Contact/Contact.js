@@ -1,8 +1,8 @@
 import React from 'react';
-import Form from '../ContactForm';
-import { FormContainer } from '../styles/form-styles/FormContainer';
-import { FormContent } from '../styles/form-styles/FormContent';
-import email_image from '../../assets/images/email.png'
+import Form from './ContactForm';
+import { FormContainer } from '../../styles/form_styles/FormContainer';
+import { FormContent } from '../../styles/form_styles/FormContent';
+import email_image from '../../../assets/images/email.png'
 
 export default function Contact() {
   return (

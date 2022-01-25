@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
-import { StyledForm } from './styles/StyledForm';
-import { StyledInput } from './styles/form-styles/StyledInputField';
+import { StyledForm } from '../../styles/StyledForm';
+import { StyledInput } from '../../styles/form_styles/StyledInputField';
 
 import { useFormik } from 'formik';
 import * as Yup from "yup";
 import emailjs, { send } from '@emailjs/browser'
 
 
-import Button from "./Button";
+import Button from "../../Button";
 
 
 

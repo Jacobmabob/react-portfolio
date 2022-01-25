@@ -1,8 +1,8 @@
 import React from 'react';
-import Button from '../Button';
-import { StyledContainer } from '../styles/about-styles/StyledContainer';
-import { FlexItem } from '../styles/about-styles/FlexItem';
-import avatar from '../../assets/images/Avatar-Maker.svg'
+import Button from '../../Button';
+import { StyledContainer } from '../../styles/about_styles/StyledContainer';
+import { FlexItem } from '../../styles/about_styles/FlexItem';
+import avatar from '../../../assets/images/Avatar-Maker.svg'
 
 export default function About() {
   return (

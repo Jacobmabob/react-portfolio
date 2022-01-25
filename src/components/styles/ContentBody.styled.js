@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from './devices'
+import { device } from './utils/devices'
 
 export const StyledContent = styled.div`
 
@@ -45,7 +45,7 @@ export const StyledContent = styled.div`
   }
 
   @media ${device.laptopL} {
-    padding: 0 20rem;
+    padding: 0 12rem;
   }
 
 `
