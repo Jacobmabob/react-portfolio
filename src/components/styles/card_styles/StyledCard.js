@@ -7,8 +7,8 @@ export const StyledCard = styled.div`
   flex-direction: column;
   justify-content: space-between;
   max-width: 450px;
-  max-height: 600px;
-  margin: 6rem 1rem;;
+  max-height: 550px;
+  margin: 5rem 1rem;
   // padding: 6rem 0;
   position: relative;
   border: solid 1px #F8F8F8;
@@ -33,14 +33,6 @@ export const StyledCard = styled.div`
     position: relative;
     transition: opacity 100ms;
 
-  }
-
-  img::before {
-    position: absolute;
-    content: "Flasher";
-    color: black;
-    width: 30px;
-    height: 50px;
   }
 
   img:hover {

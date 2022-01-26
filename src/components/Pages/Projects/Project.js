@@ -6,6 +6,7 @@ import githubIcon from '../../../assets/images/project-icons/github_icon_2.svg'
 import linkIcon from '../../../assets/images/project-icons/link_icon.svg'
 import { LinkContainer } from "../../styles/card_styles/LinkContainer";
 import Button from "../../Button";
+import flasher_screenshot from "../../../assets/images/project_images/flasher_screenshot_3_2.png"
 
 export default function Card({
   id,
@@ -20,7 +21,7 @@ export default function Card({
 
   return (
     <StyledCard key={id}>
-      <img src={cardImage}/>
+      <img src={cardImage} />
       <h3>{project_title}</h3>
       <p>{description}</p>
       <p className="tags">{tags}</p>

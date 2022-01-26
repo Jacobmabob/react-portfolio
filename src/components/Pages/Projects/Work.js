@@ -8,9 +8,10 @@ export default function Work() {
     <>
     <h1>Projects.</h1>
     <CardContainer>
-      {projectData.map( item => (
+      {projectData.map( (item , index) => (
          <Card 
-         key={item.id}
+         key={index}
+         cardImage = {item.cardImage}
          project_title={item.project_title}
          tags={item.tags} 
          description={item.description}

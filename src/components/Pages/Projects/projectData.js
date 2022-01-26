@@ -1,11 +1,15 @@
 import React from "react";
-import flasher_img from "../../../assets/images/project_images/flasher_screenshot_3_2.png"
+import flasher_img from "../../../assets/images/project_images/flasher-homepage.png"
+import tech_blog_img from "../../../assets/images/project_images/tech_blog_home.png"
+import weather_app_img from "../../../assets/images/project_images/weather-app.png"
+import jate_img from "../../../assets/images/project_images/jate.png"
+import team_builder_img from "../../../assets/images/project_images/team-builder-2.png"
 
 
 const projectData = [
     {   
         id: 1,
-        cardImage: require("../../../assets/images/project_images/flasher_screenshot_3_2.png"),
+        cardImage: flasher_img,
         project_title: "Flasher",
         tags: "Node / Express / MySql / TailwindCSS",
         description: "Flasher is a full-stack web application that serves as a flashcard study companion for Bootcamp students. Flasher allows the user to navigate through decks of flashcards pertaining to their current area of study all the way from basic HTML to the popular Javascript library React.",
@@ -24,7 +28,7 @@ const projectData = [
     },
     {
         id: 3,
-        cardImage: "",
+        cardImage: tech_blog_img,
         project_title: "Tech Blog",
         tags: "Node / Express / MySql / TailwindCSS",
         description: "This project is a CMS style blog site. It is a Full-stack CRUD application following MVC design architecture and features User authentication. Users are able to create an account, enabling them to create/update/delete their own blog posts and leave comments on posts created by others.",
@@ -33,7 +37,7 @@ const projectData = [
     },
     {
         id: 4,
-        cardImage: "",
+        cardImage: weather_app_img,
         project_title: "Weather Dashboard",
         tags: "HTML / JavaScript / Bootstrap",
         description: "This project is a real-time weather dashboard application built with Bootstrap and the OpenWeather API. The app displays the date, weather conditions and a visiual representation of the conditions for the current day of a specified city, as well as a 5-day forecast.",
@@ -42,7 +46,7 @@ const projectData = [
     },
     {
         id: 5,
-        cardImage: "",
+        cardImage: team_builder_img,
         project_title: "Team Builder 3000",
         tags: "HTML / JavaScript / Node / Bulma",
         description: "The Team Builder 3000 is a command line application built with Node.js, using the inquirer and jest packages. Through a series of prompts, the user is able to create a profile of their developement team, which is then displayed in a dynamically generated HTML document complete with styling.",
@@ -51,7 +55,7 @@ const projectData = [
     },
     {   
         id: 6,
-        cardImage: "",
+        cardImage: jate_img,
         project_title: "J.A.T.E",
         tags: "Node / Express / Webpack / IndexedDB",
         description: "J.A.T.E is a simple text editor powered by CodeMirror. The app meets PWA criteria, enabling Users to install it on their desktop or smartphone and even work offline",
