@@ -1,9 +1,9 @@
 import React from "react";
 import { StyledButton } from "./styles/Button.styled";
 
-export default function Button ({ text, callback }) {
+export default function Button ({ text, onClick }) {
   return (
-    <StyledButton>
+    <StyledButton onClick={onClick}>
       {text}
     </StyledButton>
   )

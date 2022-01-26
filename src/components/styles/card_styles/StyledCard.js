@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const StyledCard = styled.div`
 
   flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 450px;
   max-height: 600px;
   margin: 6rem 1rem;;

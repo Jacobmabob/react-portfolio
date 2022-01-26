@@ -6,6 +6,7 @@ export const FormContent = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 2rem;
 
     img {
         max-width: 60%;

@@ -13,7 +13,7 @@ export default function PortfolioContainer() {
 
   const renderPage = () => {
     if (currentPage === 'About') {
-      return <About />;
+      return <About currentPage={currentPage} handlePageChange={handlePageChange}/>;
     }
     if (currentPage === 'Work') {
       return <Work />;
@@ -29,7 +29,7 @@ export default function PortfolioContainer() {
   return (
     <Container>
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-      <StyledContent>
+      <StyledContent >
       {renderPage()}
       </StyledContent>
       <Footer />

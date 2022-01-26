@@ -1,24 +1,44 @@
 import React from 'react';
+import { StyledList } from '../../styles/skills_styles/StyledList';
+import { StyledListFlexItem } from '../../styles/skills_styles/StyledListFlexItem';
+import Button from '../../Button';
+import { StyledButtonContainer } from '../../styles/skills_styles/StyledButtonGroup';
 
 export default function Skills() {
   return (
     <div>
       <h1>Skills.</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+      <StyledList>
+        <StyledListFlexItem>
+          <h2>Frontend</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Styled Components</li>
+            <li>Tailwind CSS</li>
+            <li>Bootstrap</li>
+            <li>Bulma</li>
+          </ul>
+        </StyledListFlexItem>
+        <StyledListFlexItem>
+          <h2>Backend</h2>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>SQL</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Sequelize</li>
+            <li>Mongoose</li>
+            <li>GraphQL</li>
+          </ul>
+        </StyledListFlexItem>
+      </StyledList>
+      <StyledButtonContainer>
+        <Button text="Resume" />
+      </StyledButtonContainer>
     </div>
   );
 }

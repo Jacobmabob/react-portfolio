@@ -10,6 +10,7 @@ export default function Work() {
     <CardContainer>
       {projectData.map( item => (
          <Card 
+         key={item.id}
          project_title={item.project_title}
          tags={item.tags} 
          description={item.description}
