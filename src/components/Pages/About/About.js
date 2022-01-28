@@ -26,7 +26,7 @@ export default function About({ currentPage, handlePageChange }) {
           <Button onClick={() => handlePageChange('Contact')}
             className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
             text={'Contact'} />
-          <a href="https://docs.google.com/document/d/1e_JoknirR5EA08O8Mn1l1r6mKUlANhjsq9sPIaUu8Fo/edit?usp=sharing"
+          <a href="https://drive.google.com/file/d/1ePjSpIsCUmXnPRmWpA0cRk8p5GQNpows/view?usp=sharing"
           target="_blank">
             <Button text={'Resume'} />
             </a>

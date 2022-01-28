@@ -1,12 +1,8 @@
 import React from "react";
-// import cardImage from "../../../assets/images/card.jpg"
 import { StyledCard } from "../../styles/card_styles/StyledCard";
-import { CardContainer } from "../../styles/card_styles/CardContainer";
-import githubIcon from '../../../assets/images/project-icons/github_icon_2.svg'
-import linkIcon from '../../../assets/images/project-icons/link_icon.svg'
 import { LinkContainer } from "../../styles/card_styles/LinkContainer";
 import Button from "../../Button";
-import flasher_screenshot from "../../../assets/images/project_images/flasher_screenshot_3_2.png"
+
 
 export default function Card({
   id,

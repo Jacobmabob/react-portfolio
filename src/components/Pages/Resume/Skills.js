@@ -37,7 +37,10 @@ export default function Skills() {
         </StyledListFlexItem>
       </StyledList>
       <StyledButtonContainer>
-        <Button text="Resume" />
+      <a href="https://drive.google.com/file/d/1ePjSpIsCUmXnPRmWpA0cRk8p5GQNpows/view?usp=sharing"
+          target="_blank">
+            <Button text={'Resume'} />
+            </a>
       </StyledButtonContainer>
     </div>
   );

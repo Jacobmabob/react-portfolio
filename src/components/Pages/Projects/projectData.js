@@ -4,6 +4,7 @@ import tech_blog_img from "../../../assets/images/project_images/tech_blog_home.
 import weather_app_img from "../../../assets/images/project_images/weather-app.png"
 import jate_img from "../../../assets/images/project_images/jate.png"
 import team_builder_img from "../../../assets/images/project_images/team-builder-2.png"
+import social_network_img from "../../../assets/images/project_images/ecommerce-1.png"
 
 
 const projectData = [
@@ -19,7 +20,7 @@ const projectData = [
     },
     {   
         id: 2,
-        cardImage: "",
+        cardImage: social_network_img,
         project_title: "Social Network API",
         tags: "Node / Express / MongoDB",
         description: "This project is a backend API for a social networking site. The objective was to familiarize myself with the world of NoSql, using MongoDB and the Mongoose ODM. The application tier was created with Node.js and Express.js. API routes tested with Insomnia.",
