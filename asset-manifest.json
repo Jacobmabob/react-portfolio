@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.806bb143.css",
-    "main.js": "/portfolio/static/js/main.958ae67c.js",
-    "static/js/787.a2cb61a6.chunk.js": "/portfolio/static/js/787.a2cb61a6.chunk.js",
-    "static/media/weather-app.png": "/portfolio/static/media/weather-app.e81c8c503bb90c476d2b.png",
-    "static/media/tech_blog_home.png": "/portfolio/static/media/tech_blog_home.201a2d85072571526d3c.png",
-    "static/media/flasher-homepage.png": "/portfolio/static/media/flasher-homepage.a6464b1c4bc646c483a7.png",
-    "static/media/ecommerce-1.png": "/portfolio/static/media/ecommerce-1.eb0c7311507a5d9fcfd9.png",
-    "static/media/email.png": "/portfolio/static/media/email.f283fa68c62c986ffd4e.png",
-    "static/media/team-builder-2.png": "/portfolio/static/media/team-builder-2.566dff03b59a964f6fd2.png",
-    "static/media/jate.png": "/portfolio/static/media/jate.e30fccc29ecb02375f3c.png",
-    "static/media/Avatar-Maker.svg": "/portfolio/static/media/Avatar-Maker.c63fde77e09749619393190b06a0bee1.svg",
-    "static/media/github.svg": "/portfolio/static/media/github.768155ce48980262be4c0b5a0693c7a6.svg",
-    "static/media/logo.svg": "/portfolio/static/media/logo.f6b700889ddff54062962abf4bf2aff6.svg",
-    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.1152be679c577b5342f44fc1c18f819b.svg",
-    "index.html": "/portfolio/index.html",
-    "main.806bb143.css.map": "/portfolio/static/css/main.806bb143.css.map",
-    "main.958ae67c.js.map": "/portfolio/static/js/main.958ae67c.js.map",
-    "787.a2cb61a6.chunk.js.map": "/portfolio/static/js/787.a2cb61a6.chunk.js.map"
+    "main.css": "/react-portfolio/static/css/main.806bb143.css",
+    "main.js": "/react-portfolio/static/js/main.3aafae53.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/weather-app.png": "/react-portfolio/static/media/weather-app.e81c8c503bb90c476d2b.png",
+    "static/media/tech_blog_home.png": "/react-portfolio/static/media/tech_blog_home.201a2d85072571526d3c.png",
+    "static/media/flasher-homepage.png": "/react-portfolio/static/media/flasher-homepage.a6464b1c4bc646c483a7.png",
+    "static/media/ecommerce-1.png": "/react-portfolio/static/media/ecommerce-1.eb0c7311507a5d9fcfd9.png",
+    "static/media/email.png": "/react-portfolio/static/media/email.f283fa68c62c986ffd4e.png",
+    "static/media/team-builder-2.png": "/react-portfolio/static/media/team-builder-2.566dff03b59a964f6fd2.png",
+    "static/media/jate.png": "/react-portfolio/static/media/jate.e30fccc29ecb02375f3c.png",
+    "static/media/Avatar-Maker.svg": "/react-portfolio/static/media/Avatar-Maker.c63fde77e09749619393190b06a0bee1.svg",
+    "static/media/github.svg": "/react-portfolio/static/media/github.768155ce48980262be4c0b5a0693c7a6.svg",
+    "static/media/logo.svg": "/react-portfolio/static/media/logo.f6b700889ddff54062962abf4bf2aff6.svg",
+    "static/media/linkedin.svg": "/react-portfolio/static/media/linkedin.1152be679c577b5342f44fc1c18f819b.svg",
+    "index.html": "/react-portfolio/index.html",
+    "main.806bb143.css.map": "/react-portfolio/static/css/main.806bb143.css.map",
+    "main.3aafae53.js.map": "/react-portfolio/static/js/main.3aafae53.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.806bb143.css",
-    "static/js/main.958ae67c.js"
+    "static/js/main.3aafae53.js"
   ]
 }
